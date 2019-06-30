@@ -1,0 +1,38 @@
+{
+  "name": "salatql-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "npx nodemon --inspect ./app/bin/server env=development",
+    "test:code": "standard",
+    "test:code-fix": "standard --fix",
+    "server:dev": "nodemon --inspect ./app/bin/server env=development",
+    "server:dev-osx": "nodemon -L --inspect ./app/bin/server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/Serhio77777/node-starter-kit.git"
+  },
+  "author": "Salat_God",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Serhio77777/node-starter-kit/issues"
+  },
+  "homepage": "https://github.com/Serhio77777/node-starter-kit#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.17.1",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.4.1",
+    "lodash": "^4.17.11",
+    "express-useragent": "^1.0.12",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.11",
+    "standard": "^12.0.1"
+  }
+}
